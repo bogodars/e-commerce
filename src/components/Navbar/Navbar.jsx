@@ -35,7 +35,7 @@ const Navbar = () => {
 
           <div className={classes.button}>
             <IconButton to='/cart' aria-label='Show cart items' color='inherit'>
-              <Badge bageContent={2} color='secondary'>
+              <Badge badgeContent={2} color='secondary'>
                 <ShoppingCart />
               </Badge>
             </IconButton>
