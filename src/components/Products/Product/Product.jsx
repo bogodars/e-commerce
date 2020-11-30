@@ -20,16 +20,18 @@ const Product = ({ product }) => {
         <CardMedia className={classes.media} image='' title={product.name} />
         <CardContent>
           <div className='classes.cardContent'>
-            <Typography variant='h5' gutterBottom>
+            <Typography variant='h5' gutterBottom component='h2'>
               {product.name}
             </Typography>
-            <Typography variant='h5'>{product.price}</Typography>
+            <Typography gutterBottom variant='h5' component='h2'>
+              {product.price}
+            </Typography>
           </div>
           <Typography variant='body2' color='textSecondary'>
             {product.description}
           </Typography>
         </CardContent>
-        <CardActions disableSpacing className='classes.cardActions'>
+        <CardActions disableSpacing className={classes.cardActions}>
           <IconButton aria-lable='Add to Cart'>
             <AddShoppingCart />
           </IconButton>
